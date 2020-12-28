@@ -61,4 +61,6 @@ require (
 	gopkg.in/square/go-jose.v2 v2.5.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0
 	honnef.co/go/tools v0.0.1-2020.1.6 // indirect
+	github.com/ClickHouse/clickhouse-go v1.4.3
+	github.com/elastic/go-elasticsearch/v8 v8.0.0-20201104130540-2e1f801663c6
 )

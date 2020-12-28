@@ -18,6 +18,8 @@ package defaultcomponents
 import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/component/componenterror"
+	"go.opentelemetry.io/collector/exporter/clickhouse"
+	"go.opentelemetry.io/collector/exporter/elasticsearch"
 	"go.opentelemetry.io/collector/exporter/fileexporter"
 	"go.opentelemetry.io/collector/exporter/jaegerexporter"
 	"go.opentelemetry.io/collector/exporter/kafkaexporter"
@@ -93,6 +95,8 @@ func Components() (
 		otlpexporter.NewFactory(),
 		otlphttpexporter.NewFactory(),
 		kafkaexporter.NewFactory(),
+		elasticsearch.NewFactory(),
+		clickhouse.NewFactory(),
 	)
 	if err != nil {
 		errs = append(errs, err)

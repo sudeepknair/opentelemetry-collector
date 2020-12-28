@@ -63,6 +63,7 @@ func TestDefaultComponents(t *testing.T) {
 		"otlp",
 		"otlphttp",
 		"kafka",
+		"elasticsearch",
 	}
 
 	factories, err := Components()
